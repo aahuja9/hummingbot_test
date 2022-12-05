@@ -20,12 +20,12 @@ class AdjustedMidPrice(ScriptStrategyBase):
     # The following strategy dictionary are parameters that the script operator can adjustS
     strategy = {
         "test_volume": 50,  # the amount in base currancy to make the hypothetical market buy and market sell.
-        "bid_spread": .1,   # how far away from the mid price do you want to place the first bid order (1 indicated 1%)
-        "ask_spread": .1,   # how far away from the mid price do you want to place the first bid order (1 indicated 1%)
-        "amount": .1,       # the amount in base currancy you want to buy or sell
+        "bid_spread": .05,   # how far away from the mid price do you want to place the first bid order (1 indicated 1%)
+        "ask_spread": .05,   # how far away from the mid price do you want to place the first bid order (1 indicated 1%)
+        "amount": 50.0,       # the amount in base currancy you want to buy or sell
         "order_refresh_time": 60,
         "market": "binance_paper_trade",
-        "pair": "BTC-USDT"
+        "pair": "ALGO-USDT"
     }
 
     markets = {strategy["market"]: {strategy["pair"]}}
